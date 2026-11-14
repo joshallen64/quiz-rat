@@ -1,0 +1,16 @@
+[package]
+name = "quizrat"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rand = "0.10.3"
+
+ratatui = { version = "0.30.2", default-features = false, features = [
+  "layout-cache",
+  "std",
+] }
+ratcn = { version = "0.1.0", features = ["termina"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+strum = { version = "0.28.0", features = ["derive"] }
